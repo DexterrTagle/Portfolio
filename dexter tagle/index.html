@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dexter Jerusalem Tagle - Portfolio</title>
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* BASE STYLES */
+        body {
+            font-family: "Poppins", "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            background-color: #fdf6ec; /* soft cream */
+            color: #2d2b27; /* dark brown-black */
+        }
+
+        /* NAVIGATION */
+        .top-nav {
+            background: #4b3621; /* deep brown */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+
+        .nav-menu li {
+            margin: 0;
+        }
+
+        .nav-menu a {
+            display: block;
+            padding: 15px 25px;
+            text-decoration: none;
+            color: #fdf6ec; /* cream text */
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            background: #6b4f3b; /* medium brown */
+        }
+
+        .nav-menu a.active {
+            background: #d9b99b; /* beige accent */
+            color: #2d2b27; /* dark text */
+            font-weight: 600;
+        }
+
+        /* MAIN CONTENT */
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #4b3621; /* warm brown */
+            margin-bottom: 20px;
+        }
+
+        .welcome-text {
+            font-size: 1.2em;
+            color: #3b2f2f;
+            margin-bottom: 30px;
+            background: #fff8f0;
+            display: inline-block;
+            padding: 15px 25px;
+            border-left: 5px solid #d9b99b;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-menu {
+                flex-wrap: wrap;
+            }
+
+            .nav-menu a {
+                padding: 12px 15px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .welcome-text {
+                font-size: 1em;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p class="welcome-text">
+            I'm Dexter Jerusalem Tagle, an Information Systems student driven by passion, growth, and commitment. I am dedicated to learning new technologies, embracing challenges, and creating meaningful digital solutions.
+        </p>
+    </div>
+</body>
+</html>

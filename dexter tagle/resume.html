@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Dexter Jerusalem Tagle</title>
+    <style>
+        /* RESET AND BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            background-color: #fdf6ec; /* soft cream */
+            color: #2d2b27; /* dark brown-black */
+        }
+
+        /* PROFILE SECTION */
+        .profile-section {
+            display: flex;
+            gap: 30px;
+            padding: 30px 20px;
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff8f0; /* light cream */
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .profile-image {
+            flex: 0 0 200px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #d9b99b; /* muted brown border */
+        }
+
+        .profile-info {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .profile-info h2 {
+            margin-bottom: 10px;
+            color: #4b3621; /* medium brown */
+            font-size: 2em;
+        }
+
+        .info-item {
+            margin: 10px 0;
+            font-size: 1.05em;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #6b4f3b;
+            display: inline-block;
+            width: 100px;
+        }
+
+        .description {
+            margin-top: 15px;
+            line-height: 1.7;
+            color: #2d2b27;
+        }
+
+        /* NAVIGATION */
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            background: #4b3621; /* deep brown */
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+
+        .nav-menu li {
+            margin: 0;
+        }
+
+        .nav-menu a {
+            display: block;
+            padding: 15px 25px;
+            text-decoration: none;
+            color: #fdf6ec; /* cream text */
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            background: #6b4f3b; /* lighter brown */
+        }
+
+        .nav-menu a.active {
+            background: #d9b99b; /* soft beige */
+            color: #2d2b27;
+            font-weight: 600;
+        }
+
+        /* CONTENT SECTIONS */
+        .content-section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content-section h2 {
+            color: #4b3621;
+            border-left: 5px solid #d9b99b;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        .resume-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #fff8f0;
+            border-radius: 10px;
+            border-left: 5px solid #d9b99b;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+
+        .resume-item h3 {
+            margin: 0 0 10px 0;
+            color: #4b3621;
+        }
+
+        .resume-item p {
+            margin: 5px 0;
+            color: #3b2f2f;
+        }
+
+        /* SKILLS GRID */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: #fff8f0;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #d9b99b;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+
+        .skill-category h4 {
+            margin-bottom: 10px;
+            color: #4b3621;
+        }
+
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-category li {
+            padding: 5px 0;
+            color: #3b2f2f;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-image {
+                flex: none;
+                align-self: center;
+            }
+
+            .nav-menu {
+                flex-wrap: wrap;
+            }
+
+            .nav-menu a {
+                padding: 12px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="profile-section">
+        <div class="profile-image">
+            <img src="IMAGE/1748993813001.jpg" alt="Dexter Jerusalem Tagle">
+        </div>
+
+        <div class="profile-info">
+            <h2>Dexter Jerusalem Tagle</h2>
+
+            <div class="info-item">
+                <span class="info-label">Age:</span>
+                <span>22</span>
+            </div>
+
+            <div class="info-item">
+                <span class="info-label">Address:</span>
+                <span>Marinab, Bulan, Sorsogon, Philippines</span>
+            </div>
+
+            <div class="info-item">
+                <span class="info-label">Course:</span>
+                <span>Bachelor of Science in Information System</span>
+            </div>
+
+            <div class="description">
+                <strong>Description:</strong><br>
+                A driven Information Systems student passionate about technology and innovation. Committed to continuous learning, growth, and excellence, with a strong desire to expand skills in programming and software development. Ready to take on new challenges and create impactful solutions that drive progress in the tech industry.
+            </div>
+        </div>
+    </section>
+
+    <nav class="sticky-nav">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content-section">
+        <h2>Education</h2>
+        <div class="resume-item">
+            <h3>Bachelor of Science in Information System</h3>
+            <p><strong>Sorsogon State University</strong> | 2021 - Present</p>
+            <p>Currently pursuing a degree in Information System with focus on software development and emerging technologies.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Programming Languages</h4>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>HTML/CSS</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Technologies</h4>
+                <ul>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Git</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Experience</h2>
+        <div class="resume-item">
+            <h3>Web Base Developer</h3>
+            <p><strong>Capstone</strong> | 2024 - 2025</p>
+            <p>Developing web applications and learning new technologies through hands-on projects and coursework.</p>
+        </div>
+    </section>
+</body>
+</html>
